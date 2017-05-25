@@ -5,22 +5,13 @@ var Movie = function(movieTitle, year, score) {
   this.year = year;
   this.score = score;
 }
-
 var Library = function () {
   this.movieArray = [];
 }
-
-
-
-// // Prototypes
-
-
 // FRONTEND
 $(document).ready(function(){
   var newLibrary = new Library();
   // submit button
-
-  // var newLibrary = new Library();
   $("form#addMovie").submit(function(event){
     event.preventDefault();
     // collects user input
