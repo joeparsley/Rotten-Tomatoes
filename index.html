@@ -2,36 +2,55 @@
 <html>
   <head>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
     <meta charset="utf-8">
-    <title></title>
+    <title>Rotten Tomatoes</title>
   </head>
   <body>
-    <h1>Rotten Tomatoes</h1>
-    <form id="addMovie">
-      <label for="movieTitle">Movie Title</label>
-      <input type="text" name="movieTitle" value="" id="movie">
+    <div class="header">
+      <img src="img/title.png" alt="Rotten Tomatoes Title" />
+    </div>
+    <div class="content">
+      <form id="addMovie">
+        <label for="movieTitle">Movie Title</label>
+        <input type="text" name="movieTitle" value="" id="movie">
+        <br>
+        <label for="year">Year Released</label>
+        <input type="text" name="year" value="" id="year">
+        <br>
+        <label for="score">Tomatometer Score</label>
+        <input type="text" name="score" value="" id="score">
+        <br>
+        <div class="moveButton">
+          <button type="submit" name="button">Add movie</button>
+        </div>
+      </form>
+      <table id="movie-table">
+        <thead>
+          <tr>
+            <th>Movie Title</th>
+            <th>Year Released</th>
+            <th>Tomatometer Score</th>
+          </tr>
+        </thead>
+        <tbody>
 
-      <label for="year">Year Released</label>
-      <input type="text" name="year" value="" id="year">
+        </tbody>
+      </table>
+      <div class="moveButton">
+        <button type="button" name="sort" id="sortButton">Sort</button>
+      </div>
+    </div><!--End content-->
 
-      <label for="score">Tomatometer Score</label>
-      <input type="text" name="score" value="" id="score">
-      <button type="submit" name="button">Add movie</button>
-    </form>
-    <table id="movie-table">
-      <thead>
-        <tr>
-          <th>Movie Title</th>
-          <th>Year Released</th>
-          <th>Tomatometer Score</th>
-        </tr>
-      </thead>
-      <tbody>
+    <div class="push"></div>
+    </div><!--Push ends-->
 
-      </tbody>
-    </table>
-    <button type="button" name="sort" id="sortButton">Sort the movies</button>
+    <!-- <div class="footer"> -->
+      <footer class="footer">
+      <img src="img/logo.png" alt="Rotten Tomatoes Logo" />
+      </footer>
+    <!-- </div> -->
   </body>
 </html>

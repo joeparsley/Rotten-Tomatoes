@@ -26,8 +26,7 @@ $(document).ready(function(){
 
     $("tbody").append("<tr> <td>" + newMovie.movieTitle + "</td> <td>" + newMovie.year + "</td> <td>" + newMovie.score + "</td> </tr>");
 
-    console.log(newMovie);
-    console.log(newLibrary);
+    
   });
 
   $("#sortButton").click(function(event){
